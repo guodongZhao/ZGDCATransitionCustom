@@ -53,7 +53,11 @@
  *******************************************
  *  @param view            View
  */
-- (void)transitionWithType:(NSString *)type WithSubtype:(NSString *)subtype WithTimeDuration:(CFTimeInterval)duration WithTimingFunction:(CAMediaTimingFunction *)timingFuncation ForView:(UIView *)view;
+- (void)transitionWithType:(NSString *)type
+               WithSubtype:(NSString *)subtype
+          WithTimeDuration:(CFTimeInterval)duration
+        WithTimingFunction:(CAMediaTimingFunction *)timingFuncation
+                   ForView:(UIView *)view;
 #warning CAMediaTimingFunction 使用时需要初始化  [CAMediaTimingFunction functionWithName:timingFuncation]
 
 
@@ -83,7 +87,11 @@
  UIViewAnimationCurveEaseOut,           // 先快后慢
  UIViewAnimationCurveLinear             // 线性,即匀速
  */
-- (void)animationWithView:(UIView *)view WithAnimationTransition:(UIViewAnimationTransition)transition WithDuration:(CFTimeInterval)duration WithAnimationCurve:(UIViewAnimationCurve)animationCurve;
+- (void)animationWithView:(UIView *)view
+  WithAnimationTransition:(UIViewAnimationTransition)transition
+             WithDuration:(CFTimeInterval)duration
+
+       WithAnimationCurve:(UIViewAnimationCurve)animationCurve;
 
 
 @end

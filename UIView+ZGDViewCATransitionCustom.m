@@ -12,7 +12,11 @@
 
 #pragma mark -
 #pragma mark CATransition动画实现
-- (void)transitionWithType:(NSString *)type WithSubtype:(NSString *)subtype WithTimeDuration:(CFTimeInterval)duration WithTimingFunction:(CAMediaTimingFunction *)timingFuncation ForView:(UIView *)view
+- (void)transitionWithType:(NSString *)type
+               WithSubtype:(NSString *)subtype
+          WithTimeDuration:(CFTimeInterval)duration
+        WithTimingFunction:(CAMediaTimingFunction *)timingFuncation
+                   ForView:(UIView *)view
 {
     //创建CATransition对象
     CATransition *animation = [CATransition animation];
@@ -37,7 +41,10 @@
 
 #pragma mark -
 #pragma mark UIView实现动画
-- (void)animationWithView:(UIView *)view WithAnimationTransition:(UIViewAnimationTransition)transition WithDuration:(CFTimeInterval)duration WithAnimationCurve:(UIViewAnimationCurve)animationCurve
+- (void)animationWithView:(UIView *)view
+  WithAnimationTransition:(UIViewAnimationTransition)transition
+             WithDuration:(CFTimeInterval)duration
+       WithAnimationCurve:(UIViewAnimationCurve)animationCurve
 {
     [UIView animateWithDuration:duration animations:^{
         [UIView setAnimationCurve:animationCurve];
