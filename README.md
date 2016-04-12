@@ -14,16 +14,16 @@ CATransition动画封装 UIView动画封装
   ```
   
   * `Demo` AND  `Use`
-  ----------------
+
 #### 1.CATransition动画实现
 ```objc
 #pragma CATransition动画实现
 - (void)transitionWithType:(NSString *)type WithSubtype:(NSString *)subtype WithTimeDuration:(CFTimeInterval)duration WithTimingFunction:(CAMediaTimingFunction *)timingFuncation ForView:(UIView *)view;
 ```
-        *CAMediaTimingFunction 使用时需要初始化  `[CAMediaTimingFunction functionWithName:timingFuncation]`
-        *`对应参数`
-    
- ```objc
+#####  *CAMediaTimingFunction 使用时需要初始化  `[CAMediaTimingFunction functionWithName:timingFuncation]`
+
+######`对应参数`
+ ```objc   
  /**
  *  CATransition动画实现
  *
@@ -75,7 +75,7 @@ CATransition动画封装 UIView动画封装
 #pragma mark UIView实现动画
 - (void)animationWithView:(UIView *)view WithAnimationTransition:(UIViewAnimationTransition)transition WithDuration:(CFTimeInterval)duration WithAnimationCurve:(UIViewAnimationCurve)animationCurve;
 ```
-        *`对应参数`
+##### `对应参数`
  ```objc
  /**
  *  UIView实现动画
